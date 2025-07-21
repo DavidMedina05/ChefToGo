@@ -1,0 +1,126 @@
+body {
+    background-color: #010C1B;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 95vh;
+    margin-top: 30px;
+}
+
+.vid {
+
+    width: 350px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: aqua;
+    box-shadow: 0 0 0.2em 0.2em aqua;
+
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive, bold;
+    letter-spacing: 10px;
+    color: #D2D0E6;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    z-index: 2;
+    opacity: 1;
+}
+
+button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 75%;
+    left: 50%;
+    z-index: 3;
+    cursor: pointer;
+    /* font-size: 30px;   
+    font-weight: bold; */
+}
+
+button {
+    font-family: 'Alfa Slab One', cursive;
+    background-color: #071f403c;
+    color: #D2D0E6;
+    border-color: #D2D0E6;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 1em 2em;
+}
+
+button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em aqua;
+    background-color: aqua;
+    color: #071F40;
+    font-size: 1em;
+}
+/* .video-container video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+} */
+.social-icons {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
+    z-index: 5;
+    cursor: pointer;
+
+}
+
+.social-icons a {
+    margin-right: 5px;
+    border-radius: 50px;
+    /* color: rgb(251, 133, 7); */
+    color: rgb(177, 7, 251);
+    padding: 0.5em 0.5em;
+
+}
+
+.social-icons a :hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 0.5em 0.5em -0.4em aqua;
+    font-size: 3.5em;
+
+}
+
+.social-icons a.linkedin :hover {
+    background-color: azure;
+    color: #0077B5;
+}
+
+.social-icons a.instagram :hover {
+    background-color: #C13584;
+    color: azure;
+}
+
+.social-icons a.youtube :hover {
+    background-color: azure;
+    color: #e80606;
+}
+
+.social-icons a.github :hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
+}
+
+.social-icons a i {
+    font-size: 3.5em;
+
+}
