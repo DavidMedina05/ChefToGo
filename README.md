@@ -1,4 +1,5 @@
 Descripción
+
 FLOWITEK es una empresa de tecnología especializada en el desarrollo de soluciones de software empresariales. Ofrecemos servicios de desarrollo web, aplicaciones móviles, integración de sistemas de pago, consultoría IT y análisis de datos.
 Servicios
 Desarrollo, Mantenimiento y Optimización de Plataforma
@@ -18,19 +19,29 @@ Tipografía: Google Fonts (Nunito)
 
 Estructura del Proyecto
 FLOWITEK/
-├── index.html              # Página principal de bienvenida
-├── home.html               # Página de servicios
+├── index.html         
+# Página principal de bienvenida
+├── home.html              
+# Página de servicios
 ├── CSS/
-│   ├── style.css          # Estilos página principal
-│   └── home.css           # Estilos página de servicios
+│   ├── style.css          
+# Estilos página principal
+│   └── home.css          
+# Estilos página de servicios
 ├── Imag/
-│   └── FLOWITEK.png       # Logo principal
+│   └── FLOWITEK.png      
+# Logo principal
 ├── servicios/
-│   ├── service1.html      # Detalle servicio 1
-│   ├── service2.html      # Detalle servicio 2
-│   ├── service3.html      # Detalle servicio 3
-│   └── service4.html      # Detalle servicio 4
-└── README.md              # Documentación
+│   ├── service1.html      
+# Detalle servicio 1
+│   ├── service2.html      
+# Detalle servicio 2
+│   ├── service3.html      
+# Detalle servicio 3
+│   └── service4.html     
+# Detalle servicio 4
+└── README.md            
+# Documentación
 Características
 
 Diseño responsive con efectos glassmorphism
