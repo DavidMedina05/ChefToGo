@@ -223,7 +223,9 @@ header.black {
     padding: 0 5%;
     max-width: 1400px;
     margin: 0 auto;
+    
 }
+
 
 .boxes-wrapper {
     display: grid;
@@ -269,6 +271,30 @@ header.black {
     transform: translateY(-10px) scale(1.02);
     border-color: rgba(255, 140, 0, 0.4);
     box-shadow: 0 20px 60px rgba(255, 140, 0, 0.2), 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.Box-container-service {
+    padding: 0 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.glass-box-service {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: black;
+  max-width: 1000px;
+  
+  margin-top: 200px;
+}
+.highlight-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 3px solid #FF6B6B;
+    padding: 12px;
+    margin: 15px 0;
+    font-style: italic;
 }
 
 .text-container h1 {
@@ -385,6 +411,7 @@ html {
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 0.8s ease forwards;
+
 }
 
 .glass-box:nth-child(1) { animation-delay: 0.1s; }
