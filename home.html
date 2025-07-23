@@ -19,100 +19,148 @@
     <link rel="icon" href="img/log.ico">
 
 
-    <title>Empresa desarro</title>
+    <title>Home</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <div class="navbar-container">
             <div class="logo">
-                <a href="index.html"><img src="img/DM1.ico" alt="" width="83px" height="83px"></a>
+                <a href="index.html">
+                    <img src="FLOWITEK.png" alt="FLOWITEK" width="60px" height="60px">
+                </a>
+
             </div>
-           <div class="nav-container">
-                <nav>
-                    <a href="#">HOME</a>
-                    <a href="#">PORTFOLIO</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">CONTACT</a>
-                </nav>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
+        </div>
     </header>
 
-
-    <section class="Box-container">
-        <div class="boxes-wrapper"> 
-            <!-- caja 1 -->
-            <div class="glass-box text-container">
-                <h1>Desarrollo, Mantenimiento y Optimización de Plataforma</h1>
-                <p>Diseño, desarrollo y mantenimiento continuo de la plataforma web y móvil que conecta con clientes. Se incluyen mejoras evolutivas, soporte correctivo y actualizaciones según requerimientos de la empresa.</p>
-                <button class="glass-button">Más Información</button>
-            </div>
-                <!-- caja 2 -->
-            <div class="glass-box text-container">
-                <h1>Integración de Pasarela de Pagos y Sistema de Comisiones</h1>
-                <p>Implementación y mantenimiento de una pasarela de pagos para procesar transacciones entre clientes, incluyendo lógica de retención de comisiones y pagos a terceros.</p>
-                <button class="glass-button">Más Información</button>
-            </div>
-                <!-- caja 3 -->
-            <div class="glass-box text-container">
-                <h1>Seguridad y Autenticación de Usuarios</h1>
-                <p>Implementación de mecanismos robustos de autenticación, autorización y protección de datos para garantizar una experiencia segura tanto para chefs como para clientes.</p>
-                <button class="glass-button">Más Información</button>
-            </div>
-                <!-- caja 4 -->
-            <div class="glass-box text-container">
-                <h1>Análisis de Datos y Soporte a Decisiones Estratégicas</h1>
-                <p>Implementación de sistemas de monitoreo y análisis de datos para mejorar la toma de decisiones y optimizar campañas de marketing, operaciones y fidelización.</p>
-                <button class="glass-button">Más Información</button>
-            </div>
-
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">Nuestros Servicios</h1>
+            <p class="page-subtitle">Soluciones tecnológicas integrales diseñadas para impulsar tu negocio hacia el
+                futuro digital.</p>
         </div>
 
-    </section>
+        <section class="Box-container">
+            <div class="boxes-wrapper">
+                <!-- Servicio 1 -->
+                <div class="glass-box text-container">
+                    <h1>Desarrollo, Mantenimiento y Optimización de Plataforma</h1>
+                    <p>Diseño, desarrollo y mantenimiento continuo de la plataforma web y móvil que conecta con
+                        clientes. Se incluyen mejoras evolutivas, soporte correctivo y actualizaciones según
+                        requerimientos de la empresa.</p>
+                    <a href="./servicios/service1.html"> <button class="glass-button">Más Información</button></a>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="glass-box text-container">
+                    <h1>Integración de Pasarela de Pagos y Sistema de Comisiones</h1>
+                    <p>Implementación y mantenimiento de una pasarela de pagos para procesar transacciones entre
+                        clientes, incluyendo lógica de retención de comisiones y pagos a terceros.</p>
+                    <a href="./servicios/service2.html"><button class="glass-button">Más Información</button></a>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="glass-box text-container">
+                    <h1>Seguridad y Autenticación de Usuarios</h1>
+                    <p>Implementación de mecanismos robustos de autenticación, autorización y protección de datos para
+                        garantizar una experiencia segura tanto para chefs como para clientes.</p>
+                    <a href="./servicios/service3.html"><button class="glass-button">Más Información</button></a>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="glass-box text-container">
+                    <h1>Análisis de Datos y Soporte a Decisiones Estratégicas</h1>
+                    <p>Implementación de sistemas de monitoreo y análisis de datos para mejorar la toma de decisiones y
+                        optimizar campañas de marketing, operaciones y fidelización.</p>
+                    <a href="./servicios/service4.html"><button class="glass-button">Más Información</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 
     <script>
+        $(document).ready(function () {
+            $(document).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $("header").addClass("black");
+                } else {
+                    $("header").removeClass("black");
+                }
+            });
 
-        $(document).scroll(function () {
-            if ($(document).scrollTop()) {
-                $("nav").addClass("black");
-            } else {
-                $("nav").removeClass("black");
-            }
+            // Mobile menu toggle
+            $('.hamburger').click(function () {
+                $('.nav-menu').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+
+            // Close mobile menu when clicking on a link
+            $('.nav-link').click(function () {
+                $('.nav-menu').removeClass('active');
+                $('.hamburger').removeClass('active');
+            });
+
+
+            // Smooth scroll for navigation
+            $('.nav-link').click(function (e) {
+                e.preventDefault();
+                const target = $(this).attr('href');
+                if ($(target).length) {
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top - 100
+                    }, 800);
+                }
+            });
+
+            $('.glass-box').hover(
+                function () {
+                    $(this).css({
+                        'transform': 'translateY(-10px) scale(1.02)',
+                        'border-color': 'rgba(255, 140, 0, 0.4)'
+                    });
+                },
+                function () {
+                    $(this).css({
+                        'transform': 'translateY(0) scale(1)',
+                        'border-color': 'rgba(255, 140, 0, 0.2)'
+                    });
+                }
+            );
+
+            $(window).scroll(function () {
+                const scrolled = $(this).scrollTop();
+                $('.page-header').css('transform', 'translateY(' + (scrolled * 0.5) + 'px)');
+            });
         });
     </script>
-    <script>
-        var video = document.getElementById("my-video");
-
-        function playVideo() {
-            video.play();
-        }
-
-        video.addEventListener("mouseover", playVideo);
-    </script>
-
-    <footer>
-        <div class="social-icons">
-            <a  target="_blank" class="instagram"><i
-                    class="fa fa-instagram icon"></i></a>
-            <a  target="_blank"
-                class="linkedin"><i class="fa fa-linkedin-square icon"></i></a>
-            <a  target="_blank" class="youtube"><i
-                    class="fa fa-youtube-square icon"></i></a>
-            <a  target="_blank" class="github"><i
-                    class="fa fa-github-square icon"></i></a>
-        </div>
-    </footer>
 </body>
 
 </html>
